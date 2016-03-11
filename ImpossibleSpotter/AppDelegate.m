@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <iAd/iAd.h>
 
 @interface AppDelegate ()
 
@@ -17,6 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [UIViewController prepareInterstitialAds];
+    if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)]){
+        [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil]];
+    }
+    [self showDailyNotification];
     return YES;
 }
 
@@ -26,6 +32,7 @@
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
+    [[NSUserDefaults standardUserDefaults]synchronize];
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
@@ -39,7 +46,28 @@
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
+    [[NSUserDefaults standardUserDefaults]synchronize];
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)showDailyNotification
+{
+    UILocalNotification *notification = [[UILocalNotification alloc]init];
+    [[UIApplication sharedApplication]cancelAllLocalNotifications];
+    int lowerBound = 12;
+    int upperBound = 20;
+    int rndValue = lowerBound + arc4random() % (upperBound - lowerBound);
+    notification.alertBody = [NSString stringWithFormat:@"Average score for the day is %d. Play KukuKube and get high score in leaderboards.",rndValue];
+    
+    NSDate *now = [NSDate date];
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSDateComponents *components = [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay fromDate:now];
+    [components setHour:19];
+    NSDate *today7pm = [calendar dateFromComponents:components];
+    
+    notification.fireDate = today7pm;
+    notification.repeatInterval = NSCalendarUnitDay;
+    [[UIApplication sharedApplication]scheduleLocalNotification:notification];
 }
 
 @end

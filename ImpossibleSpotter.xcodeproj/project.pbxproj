@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C8121CF71B64E75400887687 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8121CF61B64E75400887687 /* StoreKit.framework */; };
+		C8121CFA1B64FBDB00887687 /* UpgradeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8121CF91B64FBDB00887687 /* UpgradeViewController.m */; };
 		C83C51621B5E135E009A3F68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C83C51611B5E135E009A3F68 /* main.m */; };
 		C83C51651B5E135E009A3F68 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C83C51641B5E135E009A3F68 /* AppDelegate.m */; };
 		C83C51681B5E135E009A3F68 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C83C51671B5E135E009A3F68 /* ViewController.m */; };
@@ -14,6 +16,14 @@
 		C83C516D1B5E135E009A3F68 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C83C516C1B5E135E009A3F68 /* Images.xcassets */; };
 		C83C51701B5E135E009A3F68 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C83C516E1B5E135E009A3F68 /* LaunchScreen.xib */; };
 		C83C517C1B5E135E009A3F68 /* ImpossibleSpotterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C83C517B1B5E135E009A3F68 /* ImpossibleSpotterTests.m */; };
+		C85BE6B21B60B11C00AAB09C /* ButtonGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = C85BE6B11B60B11C00AAB09C /* ButtonGridView.m */; };
+		C85BE6B51B60B14F00AAB09C /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C85BE6B41B60B14F00AAB09C /* PlayViewController.m */; };
+		C85BE6B81B63B79100AAB09C /* CustomIOSAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = C85BE6B71B63B79100AAB09C /* CustomIOSAlertView.m */; };
+		C85BE6BB1B63BA2100AAB09C /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C85BE6BA1B63BA2100AAB09C /* ResultViewController.m */; };
+		C85BE6BE1B63F6FA00AAB09C /* Music1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C85BE6BC1B63F6FA00AAB09C /* Music1.mp3 */; };
+		C85BE6BF1B63F6FA00AAB09C /* Music2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C85BE6BD1B63F6FA00AAB09C /* Music2.mp3 */; };
+		C85BE6C81B64B47100AAB09C /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C85BE6C71B64B47100AAB09C /* GameKit.framework */; };
+		C85BE6CA1B64DA1A00AAB09C /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C85BE6C91B64DA1A00AAB09C /* iAd.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C8121CF61B64E75400887687 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		C8121CF81B64FBDB00887687 /* UpgradeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpgradeViewController.h; sourceTree = "<group>"; };
+		C8121CF91B64FBDB00887687 /* UpgradeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpgradeViewController.m; sourceTree = "<group>"; };
 		C83C515C1B5E135E009A3F68 /* ImpossibleSpotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImpossibleSpotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C83C51601B5E135E009A3F68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C83C51611B5E135E009A3F68 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +53,18 @@
 		C83C51751B5E135E009A3F68 /* ImpossibleSpotterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImpossibleSpotterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C83C517A1B5E135E009A3F68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C83C517B1B5E135E009A3F68 /* ImpossibleSpotterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImpossibleSpotterTests.m; sourceTree = "<group>"; };
+		C85BE6B01B60B11C00AAB09C /* ButtonGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonGridView.h; sourceTree = "<group>"; };
+		C85BE6B11B60B11C00AAB09C /* ButtonGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonGridView.m; sourceTree = "<group>"; };
+		C85BE6B31B60B14F00AAB09C /* PlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayViewController.h; sourceTree = "<group>"; };
+		C85BE6B41B60B14F00AAB09C /* PlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayViewController.m; sourceTree = "<group>"; };
+		C85BE6B61B63B79100AAB09C /* CustomIOSAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomIOSAlertView.h; sourceTree = "<group>"; };
+		C85BE6B71B63B79100AAB09C /* CustomIOSAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomIOSAlertView.m; sourceTree = "<group>"; };
+		C85BE6B91B63BA2100AAB09C /* ResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultViewController.h; sourceTree = "<group>"; };
+		C85BE6BA1B63BA2100AAB09C /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultViewController.m; sourceTree = "<group>"; };
+		C85BE6BC1B63F6FA00AAB09C /* Music1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Music1.mp3; sourceTree = "<group>"; };
+		C85BE6BD1B63F6FA00AAB09C /* Music2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Music2.mp3; sourceTree = "<group>"; };
+		C85BE6C71B64B47100AAB09C /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		C85BE6C91B64DA1A00AAB09C /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +72,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8121CF71B64E75400887687 /* StoreKit.framework in Frameworks */,
+				C85BE6CA1B64DA1A00AAB09C /* iAd.framework in Frameworks */,
+				C85BE6C81B64B47100AAB09C /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +91,9 @@
 		C83C51531B5E135E009A3F68 = {
 			isa = PBXGroup;
 			children = (
+				C8121CF61B64E75400887687 /* StoreKit.framework */,
+				C85BE6C91B64DA1A00AAB09C /* iAd.framework */,
+				C85BE6C71B64B47100AAB09C /* GameKit.framework */,
 				C83C515E1B5E135E009A3F68 /* ImpossibleSpotter */,
 				C83C51781B5E135E009A3F68 /* ImpossibleSpotterTests */,
 				C83C515D1B5E135E009A3F68 /* Products */,
@@ -81,14 +112,24 @@
 		C83C515E1B5E135E009A3F68 /* ImpossibleSpotter */ = {
 			isa = PBXGroup;
 			children = (
+				C85BE6B61B63B79100AAB09C /* CustomIOSAlertView.h */,
+				C85BE6B71B63B79100AAB09C /* CustomIOSAlertView.m */,
 				C83C51631B5E135E009A3F68 /* AppDelegate.h */,
 				C83C51641B5E135E009A3F68 /* AppDelegate.m */,
 				C83C51661B5E135E009A3F68 /* ViewController.h */,
 				C83C51671B5E135E009A3F68 /* ViewController.m */,
 				C83C51691B5E135E009A3F68 /* Main.storyboard */,
+				C85BE6B01B60B11C00AAB09C /* ButtonGridView.h */,
+				C85BE6B11B60B11C00AAB09C /* ButtonGridView.m */,
 				C83C516C1B5E135E009A3F68 /* Images.xcassets */,
 				C83C516E1B5E135E009A3F68 /* LaunchScreen.xib */,
 				C83C515F1B5E135E009A3F68 /* Supporting Files */,
+				C85BE6B31B60B14F00AAB09C /* PlayViewController.h */,
+				C85BE6B41B60B14F00AAB09C /* PlayViewController.m */,
+				C85BE6B91B63BA2100AAB09C /* ResultViewController.h */,
+				C85BE6BA1B63BA2100AAB09C /* ResultViewController.m */,
+				C8121CF81B64FBDB00887687 /* UpgradeViewController.h */,
+				C8121CF91B64FBDB00887687 /* UpgradeViewController.m */,
 			);
 			path = ImpossibleSpotter;
 			sourceTree = "<group>";
@@ -96,6 +137,8 @@
 		C83C515F1B5E135E009A3F68 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C85BE6BC1B63F6FA00AAB09C /* Music1.mp3 */,
+				C85BE6BD1B63F6FA00AAB09C /* Music2.mp3 */,
 				C83C51601B5E135E009A3F68 /* Info.plist */,
 				C83C51611B5E135E009A3F68 /* main.m */,
 			);
@@ -168,6 +211,12 @@
 				TargetAttributes = {
 					C83C515B1B5E135E009A3F68 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = DHWTN4KSHZ;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
 					};
 					C83C51741B5E135E009A3F68 = {
 						CreatedOnToolsVersion = 6.4;
@@ -201,6 +250,8 @@
 			files = (
 				C83C516B1B5E135E009A3F68 /* Main.storyboard in Resources */,
 				C83C51701B5E135E009A3F68 /* LaunchScreen.xib in Resources */,
+				C85BE6BF1B63F6FA00AAB09C /* Music2.mp3 in Resources */,
+				C85BE6BE1B63F6FA00AAB09C /* Music1.mp3 in Resources */,
 				C83C516D1B5E135E009A3F68 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,8 +270,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C85BE6B21B60B11C00AAB09C /* ButtonGridView.m in Sources */,
+				C8121CFA1B64FBDB00887687 /* UpgradeViewController.m in Sources */,
+				C85BE6BB1B63BA2100AAB09C /* ResultViewController.m in Sources */,
 				C83C51681B5E135E009A3F68 /* ViewController.m in Sources */,
+				C85BE6B81B63B79100AAB09C /* CustomIOSAlertView.m in Sources */,
 				C83C51651B5E135E009A3F68 /* AppDelegate.m in Sources */,
+				C85BE6B51B60B14F00AAB09C /* PlayViewController.m in Sources */,
 				C83C51621B5E135E009A3F68 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,9 +405,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Shibin S (HT6N7H85E8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Shibin S (HT6N7H85E8)";
 				INFOPLIST_FILE = ImpossibleSpotter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0a5ebc77-d7ba-4094-b47c-e6b4eb710423";
 			};
 			name = Debug;
 		};
@@ -359,9 +419,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Shibin S (DHWTN4KSHZ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shibin S (DHWTN4KSHZ)";
 				INFOPLIST_FILE = ImpossibleSpotter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0a5ebc77-d7ba-4094-b47c-e6b4eb710423";
 			};
 			name = Release;
 		};
@@ -418,6 +482,7 @@
 				C83C51811B5E135E009A3F68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C83C51821B5E135E009A3F68 /* Build configuration list for PBXNativeTarget "ImpossibleSpotterTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +491,7 @@
 				C83C51841B5E135E009A3F68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

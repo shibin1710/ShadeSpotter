@@ -7,9 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PlayViewController.h"
+#import <AVFoundation/AVFoundation.h>
+#import "ResultViewController.h"
+#import <GameKit/GameKit.h>
+#import "CustomIOSAlertView.h"
+#import <iAd/iAd.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<PlayDelegate,AVAudioPlayerDelegate,ResultDelegate,UIAlertViewDelegate,CustomIOSAlertViewDelegate,GKGameCenterControllerDelegate,ADBannerViewDelegate>
 
+@property (strong, nonatomic) AVAudioPlayer *myPlayer;
 
 @end
 

@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +18,622 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7wl-eO-dep">
+                                <rect key="frame" x="156" y="151" width="288" height="347"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okf-zM-bDb">
+                                        <rect key="frame" x="20" y="83" width="248" height="40"/>
+                                        <color key="backgroundColor" red="0.0" green="0.42001967509999999" blue="0.84055397730000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="21"/>
+                                        <state key="normal" title="Letter Spotter">
+                                            <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="textSpotterClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0fV-4v-1cc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWh-cx-YHU">
+                                        <rect key="frame" x="20" y="143" width="248" height="40"/>
+                                        <color key="backgroundColor" red="0.0" green="0.46274509800000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="21"/>
+                                        <state key="normal" title="Color Spotter">
+                                            <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="colorSpotterClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bD9-JY-QmB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MwQ-et-uNa">
+                                        <rect key="frame" x="20" y="204" width="248" height="40"/>
+                                        <color key="backgroundColor" red="0.88608743690000003" green="0.18859353600000001" blue="0.12800092369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="21"/>
+                                        <state key="normal" title="Shuffle Mode">
+                                            <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="shuffleModeClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qHH-Fj-uCg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lb5-qX-boE">
+                                        <rect key="frame" x="20" y="265" width="110" height="39"/>
+                                        <color key="backgroundColor" red="0.50196081399917603" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="16"/>
+                                        <state key="normal" title="Upgrade">
+                                            <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="upgradeClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NiX-PF-F23"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIf-8f-ehz">
+                                        <rect key="frame" x="20" y="20" width="248" height="40"/>
+                                        <color key="backgroundColor" red="0.87567077019999995" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="21"/>
+                                        <state key="normal" title="Shade Spotter">
+                                            <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="shadeSpotterClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hqZ-wO-Rxq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oag-Rj-NpY">
+                                        <rect key="frame" x="158" y="265" width="110" height="39"/>
+                                        <color key="backgroundColor" red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="16"/>
+                                        <state key="normal" title="Leaderboard">
+                                            <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="leaderboardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MzL-5z-WkV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="QIk-qA-Wsj"/>
+                                    <constraint firstAttribute="height" constant="347" id="lqK-CL-UDp"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music by Bensound.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNQ-yl-AwW">
+                                <rect key="frame" x="204" y="565" width="191" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="191" id="Vvi-2g-kzd"/>
+                                    <constraint firstAttribute="height" constant="21" id="ko3-7F-Kuq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WL0-Fd-FMK">
+                                <rect key="frame" x="520" y="28" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="EX7-Jf-72s"/>
+                                    <constraint firstAttribute="width" constant="64" id="m0z-WJ-gfS"/>
+                                </constraints>
+                                <state key="normal" image="SoundOff">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="SoundOn"/>
+                                <connections>
+                                    <action selector="toggleSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KGv-Eo-PdN"/>
+                                </connections>
+                            </button>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q5R-oA-lWa">
+                                <rect key="frame" x="140" y="550" width="320" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="Le7-9q-z4x"/>
+                                    <constraint firstAttribute="height" constant="50" id="RCB-y4-X5n"/>
+                                </constraints>
+                            </adBannerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="7wl-eO-dep" secondAttribute="centerX" id="2gf-Ku-1e8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QNQ-yl-AwW" secondAttribute="bottom" constant="14" id="63Q-9i-oPn"/>
+                            <constraint firstItem="WL0-Fd-FMK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="6XQ-Fx-IY0"/>
+                            <constraint firstItem="WL0-Fd-FMK" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="X0w-og-Vi8"/>
+                            <constraint firstAttribute="centerX" secondItem="q5R-oA-lWa" secondAttribute="centerX" id="gU7-Hw-x4l"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="q5R-oA-lWa" secondAttribute="bottom" id="hMz-AN-KMa"/>
+                            <constraint firstAttribute="centerY" secondItem="7wl-eO-dep" secondAttribute="centerY" constant="-24.5" id="nzw-wm-box"/>
+                            <constraint firstAttribute="centerX" secondItem="QNQ-yl-AwW" secondAttribute="centerX" id="vZC-ib-j7f"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bannerView" destination="q5R-oA-lWa" id="rlM-uj-V57"/>
+                        <outlet property="colorSpotterButton" destination="oWh-cx-YHU" id="jGK-Tr-fP6"/>
+                        <outlet property="leaderboardButton" destination="oag-Rj-NpY" id="MyW-sI-DZE"/>
+                        <outlet property="shadeSpotterButton" destination="LIf-8f-ehz" id="SCY-Zf-nz2"/>
+                        <outlet property="shuffleModeButton" destination="MwQ-et-uNa" id="KvL-Y7-CuE"/>
+                        <outlet property="soundToggleButton" destination="WL0-Fd-FMK" id="ia6-so-DVV"/>
+                        <outlet property="textSpotterButton" destination="okf-zM-bDb" id="Imc-qu-c3R"/>
+                        <outlet property="upgradeButton" destination="lb5-qX-boE" id="o1C-yp-JbS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Play View Controller-->
+        <scene sceneID="0Vp-W5-ixE">
+            <objects>
+                <viewController storyboardIdentifier="PlayViewController" id="uzZ-gn-akW" customClass="PlayViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XKB-nh-i0T"/>
+                        <viewControllerLayoutGuide type="bottom" id="VYw-1s-jbk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YBY-oe-fBB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8rl-9q-ttW">
+                                <rect key="frame" x="140" y="550" width="320" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="rIA-cq-2W3"/>
+                                    <constraint firstAttribute="width" constant="320" id="w5p-uZ-smb"/>
+                                </constraints>
+                            </adBannerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score : 137" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oay-Yg-XcE">
+                                <rect key="frame" x="1" y="35" width="177" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="CcM-zS-WcS"/>
+                                    <constraint firstAttribute="width" constant="177" id="ZFM-pA-XQ9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time : 29" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JEj-ca-e3I">
+                                <rect key="frame" x="413" y="35" width="186" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="PXA-1p-iwv"/>
+                                    <constraint firstAttribute="width" constant="186" id="hAc-J5-LdT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fH0-LT-bGl">
+                                <rect key="frame" x="20" y="93" width="560" height="560"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fH0-LT-bGl" secondAttribute="height" multiplier="1:1" id="cf9-zw-dAG"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ajX-Tc-xvY">
+                                <rect key="frame" x="20" y="93" width="560" height="560"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XGX-Gp-drc">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="560"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="resumeVieButtonClicked:" destination="uzZ-gn-akW" eventType="touchUpInside" id="WqV-dR-870"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Game Paused" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qah-pb-j88">
+                                        <rect key="frame" x="164" y="235" width="232" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="6jk-7g-efC"/>
+                                            <constraint firstAttribute="width" constant="232" id="tsR-98-731"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="34"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="XGX-Gp-drc" secondAttribute="trailing" id="DnS-T5-c01"/>
+                                    <constraint firstItem="XGX-Gp-drc" firstAttribute="leading" secondItem="ajX-Tc-xvY" secondAttribute="leading" id="JE6-05-q53"/>
+                                    <constraint firstItem="XGX-Gp-drc" firstAttribute="top" secondItem="ajX-Tc-xvY" secondAttribute="top" id="Nwx-Ad-cmI"/>
+                                    <constraint firstAttribute="bottom" secondItem="XGX-Gp-drc" secondAttribute="bottom" id="QNd-Qi-ZH0"/>
+                                    <constraint firstAttribute="centerX" secondItem="Qah-pb-j88" secondAttribute="centerX" id="RW1-uc-psz"/>
+                                    <constraint firstAttribute="centerY" secondItem="Qah-pb-j88" secondAttribute="centerY" id="TV4-XO-7rt"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ck9-Kr-yZ3">
+                                <rect key="frame" x="237" y="665" width="126" height="43"/>
+                                <color key="backgroundColor" red="0.87567077019999995" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="UI3-Jx-E0K"/>
+                                    <constraint firstAttribute="width" constant="126" id="Vyc-H1-Xfi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                <state key="normal" title="Pause">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pauseButtonClicked:" destination="uzZ-gn-akW" eventType="touchUpInside" id="rGO-mn-H4g"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pih-Nh-J9t">
+                                <rect key="frame" x="20" y="665" width="560" height="43"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i6V-Um-TsF" userLabel="Resume">
+                                        <rect key="frame" x="0.0" y="0.0" width="126" height="43"/>
+                                        <color key="backgroundColor" red="0.0" green="0.46274509800000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="126" id="aNg-ys-hS0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                        <state key="normal" title="Resume">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="resumeButtonClicked:" destination="uzZ-gn-akW" eventType="touchUpInside" id="XHE-KT-fBQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNg-zE-3HF" userLabel="Quit">
+                                        <rect key="frame" x="434" y="0.0" width="126" height="43"/>
+                                        <color key="backgroundColor" red="0.87567077019999995" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="126" id="dWm-0X-58X"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                        <state key="normal" title="Quit">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="quitButtonClicked:" destination="uzZ-gn-akW" eventType="touchUpInside" id="0Xg-e8-c1a"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="PNg-zE-3HF" secondAttribute="trailing" id="9DN-zR-G2L"/>
+                                    <constraint firstAttribute="height" constant="43" id="YEk-W8-T5f"/>
+                                    <constraint firstItem="i6V-Um-TsF" firstAttribute="top" secondItem="pih-Nh-J9t" secondAttribute="top" id="eFd-bY-X8C"/>
+                                    <constraint firstAttribute="bottom" secondItem="PNg-zE-3HF" secondAttribute="bottom" id="eLo-l3-V3u"/>
+                                    <constraint firstItem="PNg-zE-3HF" firstAttribute="top" secondItem="pih-Nh-J9t" secondAttribute="top" id="gie-zq-Add"/>
+                                    <constraint firstAttribute="bottom" secondItem="i6V-Um-TsF" secondAttribute="bottom" id="i3y-Mj-C3r"/>
+                                    <constraint firstItem="i6V-Um-TsF" firstAttribute="leading" secondItem="pih-Nh-J9t" secondAttribute="leading" id="tCY-MF-o1Y"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fH0-LT-bGl" firstAttribute="top" secondItem="JEj-ca-e3I" secondAttribute="bottom" constant="15" id="0zK-WY-dis"/>
+                            <constraint firstItem="Ck9-Kr-yZ3" firstAttribute="top" secondItem="fH0-LT-bGl" secondAttribute="bottom" constant="12" id="15x-wo-E52"/>
+                            <constraint firstAttribute="centerX" secondItem="8rl-9q-ttW" secondAttribute="centerX" id="9ig-Vi-r1n"/>
+                            <constraint firstItem="VYw-1s-jbk" firstAttribute="top" secondItem="8rl-9q-ttW" secondAttribute="bottom" id="CB4-XV-Pha"/>
+                            <constraint firstItem="oay-Yg-XcE" firstAttribute="top" secondItem="XKB-nh-i0T" secondAttribute="bottom" constant="15" id="FBZ-vx-4Db"/>
+                            <constraint firstAttribute="trailing" secondItem="JEj-ca-e3I" secondAttribute="trailing" constant="1" id="NDH-6H-FU2"/>
+                            <constraint firstAttribute="trailing" secondItem="pih-Nh-J9t" secondAttribute="trailing" constant="20" id="NXA-2k-WYr"/>
+                            <constraint firstItem="JEj-ca-e3I" firstAttribute="top" secondItem="XKB-nh-i0T" secondAttribute="bottom" constant="15" id="Odn-MO-WXH"/>
+                            <constraint firstAttribute="trailing" secondItem="fH0-LT-bGl" secondAttribute="trailing" constant="20" id="SWb-wz-vIJ"/>
+                            <constraint firstItem="pih-Nh-J9t" firstAttribute="top" secondItem="ajX-Tc-xvY" secondAttribute="bottom" constant="12" id="X3p-to-zQc"/>
+                            <constraint firstItem="oay-Yg-XcE" firstAttribute="leading" secondItem="YBY-oe-fBB" secondAttribute="leading" constant="1" id="cOv-fk-wF7"/>
+                            <constraint firstItem="fH0-LT-bGl" firstAttribute="leading" secondItem="YBY-oe-fBB" secondAttribute="leading" constant="20" id="g32-eL-aKf"/>
+                            <constraint firstItem="Ck9-Kr-yZ3" firstAttribute="top" secondItem="ajX-Tc-xvY" secondAttribute="bottom" constant="12" id="hek-Ur-W9R"/>
+                            <constraint firstItem="pih-Nh-J9t" firstAttribute="leading" secondItem="YBY-oe-fBB" secondAttribute="leading" constant="20" id="ifZ-y6-Fbn"/>
+                            <constraint firstItem="ajX-Tc-xvY" firstAttribute="leading" secondItem="YBY-oe-fBB" secondAttribute="leadingMargin" constant="4" id="rfk-7m-IlQ"/>
+                            <constraint firstItem="ajX-Tc-xvY" firstAttribute="top" secondItem="JEj-ca-e3I" secondAttribute="bottom" constant="15" id="skH-R2-H8P"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ajX-Tc-xvY" secondAttribute="trailing" constant="4" id="xeN-se-XM2"/>
+                            <constraint firstAttribute="centerX" secondItem="Ck9-Kr-yZ3" secondAttribute="centerX" id="xwv-fl-BCE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bannerView" destination="8rl-9q-ttW" id="YbG-RF-mNg"/>
+                        <outlet property="buttonView" destination="fH0-LT-bGl" id="94o-XF-qn3"/>
+                        <outlet property="pauseButton" destination="Ck9-Kr-yZ3" id="2C0-TV-udQ"/>
+                        <outlet property="pauseView" destination="ajX-Tc-xvY" id="6YZ-HW-lyX"/>
+                        <outlet property="quitButton" destination="PNg-zE-3HF" id="SCx-Ks-hCo"/>
+                        <outlet property="quitView" destination="pih-Nh-J9t" id="OPv-ic-Iuf"/>
+                        <outlet property="resumeButton" destination="i6V-Um-TsF" id="f8D-gr-ViS"/>
+                        <outlet property="scoreLabel" destination="oay-Yg-XcE" id="Scp-XP-uUl"/>
+                        <outlet property="timerLabel" destination="JEj-ca-e3I" id="Qkp-3G-SP4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WIl-4C-GpQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="919" y="313"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="0I0-So-0f6">
+            <objects>
+                <viewController storyboardIdentifier="ResultViewController" id="UIP-81-n6V" customClass="ResultViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3SD-Yo-IGh"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Wh-TQ-mHy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9FA-0d-U6N">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GSd-Ap-dWg">
+                                <rect key="frame" x="160" y="71" width="280" height="349"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cf-BV-Sfm">
+                                        <rect key="frame" x="63" y="0.0" width="154" height="68"/>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="30"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="38" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ft1-ax-8KD">
+                                        <rect key="frame" x="63" y="54" width="154" height="68"/>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="50"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.41805990009999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dgl-HV-edd" userLabel="Retry">
+                                        <rect key="frame" x="0.0" y="176" width="126" height="43"/>
+                                        <color key="backgroundColor" red="0.0" green="0.46274509800000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                        <state key="normal" title="Play Again">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playAgainTapped:" destination="UIP-81-n6V" eventType="touchUpInside" id="l65-rS-V43"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fju-k1-oBj" userLabel="Home">
+                                        <rect key="frame" x="152" y="176" width="126" height="43"/>
+                                        <color key="backgroundColor" red="0.0" green="0.42001967509999999" blue="0.84055397730000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                        <state key="normal" title="Home">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="homeButtonTapped:" destination="UIP-81-n6V" eventType="touchUpInside" id="k24-2J-cXT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S0p-lR-ql0" userLabel="Rate">
+                                        <rect key="frame" x="152" y="258" width="126" height="43"/>
+                                        <color key="backgroundColor" red="0.48432360200000002" green="0.1538085938" blue="0.31206311679999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Remove Ads">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="removeAdsTapped:" destination="UIP-81-n6V" eventType="touchUpInside" id="Cyc-Tm-lVJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shY-0q-tct" userLabel="Remove Ads">
+                                        <rect key="frame" x="2" y="258" width="126" height="43"/>
+                                        <color key="backgroundColor" red="0.87567077019999995" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                        <state key="normal" title="Share">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="leaderboardTapped:" destination="UIP-81-n6V" eventType="touchUpInside" id="EyS-Ej-OuK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="Pxz-yq-Pmd"/>
+                                    <constraint firstAttribute="height" constant="349" id="d9K-0h-0D7"/>
+                                </constraints>
+                            </view>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cfi-wf-REX">
+                                <rect key="frame" x="140" y="550" width="320" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="dew-JE-SNA"/>
+                                    <constraint firstAttribute="height" constant="50" id="kP5-Rs-O0K"/>
+                                </constraints>
+                            </adBannerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0Wh-TQ-mHy" firstAttribute="top" secondItem="cfi-wf-REX" secondAttribute="bottom" id="H5o-gh-Fuu"/>
+                            <constraint firstAttribute="centerY" secondItem="GSd-Ap-dWg" secondAttribute="centerY" constant="54.5" id="VhW-DZ-sqo"/>
+                            <constraint firstAttribute="centerX" secondItem="cfi-wf-REX" secondAttribute="centerX" id="g7P-lr-ERf"/>
+                            <constraint firstAttribute="centerX" secondItem="GSd-Ap-dWg" secondAttribute="centerX" id="qu1-GG-azf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bannerView" destination="cfi-wf-REX" id="Qly-7b-Ksq"/>
+                        <outlet property="homeButton" destination="Fju-k1-oBj" id="Hdh-o2-hAt"/>
+                        <outlet property="rateMeButton" destination="S0p-lR-ql0" id="KlD-Gr-hNs"/>
+                        <outlet property="removeAdsButton" destination="shY-0q-tct" id="iJf-Qx-9vt"/>
+                        <outlet property="retryButton" destination="Dgl-HV-edd" id="QsQ-FV-nQu"/>
+                        <outlet property="scoreLabel" destination="Ft1-ax-8KD" id="ZXz-ER-mQA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QK9-i9-XaR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1462" y="298"/>
+        </scene>
+        <!--Upgrade View Controller-->
+        <scene sceneID="fF0-D6-aeb">
+            <objects>
+                <viewController storyboardIdentifier="UpgradeViewController" id="rMb-KU-U1n" customClass="UpgradeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Uj5-Ip-q6j"/>
+                        <viewControllerLayoutGuide type="bottom" id="DXP-8Y-X4g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4dr-ej-SgE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uwP-vz-fnQ">
+                                <rect key="frame" x="30" y="115" width="540" height="100"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Upgrade today to">
+                                        <attributes>
+                                            <color key="NSColor" red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="27" name="Georgia"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="27" name="Georgia"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="enjoy ad free experience,">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="27" name="Georgia"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="27" name="Georgia"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="play new levels">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="27" name="Georgia"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="27" name="Georgia"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="and many more updates">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.45135176809210525" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="27" name="Georgia"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="27" name="Georgia"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="without paying more.!!">
+                                        <attributes>
+                                            <color key="NSColor" red="0.29803922772407532" green="0.29803922772407532" blue="0.29803922772407532" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="27" name="Georgia"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avE-xo-PNi">
+                                <rect key="frame" x="235" y="247" width="130" height="33"/>
+                                <color key="backgroundColor" red="0.87567077019999995" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="70o-7t-cTZ"/>
+                                    <constraint firstAttribute="width" constant="130" id="MXh-Cc-QUi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="18"/>
+                                <state key="normal" title="Get for $ 0.99">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="purchaseButtonClicked:" destination="rMb-KU-U1n" eventType="touchUpInside" id="VX1-Fi-Tev"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or already purchased?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rni-hp-Nk9">
+                                <rect key="frame" x="30" y="313" width="540" height="19.5"/>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUS-MG-E15">
+                                <rect key="frame" x="225" y="370" width="150" height="33"/>
+                                <color key="backgroundColor" red="0.0" green="0.46376439139999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="IGI-dn-krB"/>
+                                    <constraint firstAttribute="width" constant="150" id="Q8x-kz-LXS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
+                                <state key="normal" title="Restore Purchase">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="restoreButtonClicked:" destination="rMb-KU-U1n" eventType="touchUpInside" id="dVW-nz-n9r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bnc-mP-n5y">
+                                <rect key="frame" x="546" y="24" width="46" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="ph6-Ib-aOE"/>
+                                    <constraint firstAttribute="height" constant="46" id="wSQ-wo-zIH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="✕">
+                                    <color key="titleColor" red="0.87567077019999995" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeButtonClicked:" destination="rMb-KU-U1n" eventType="touchUpInside" id="F9k-RS-75d"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="HpA-2g-p4B">
+                                <rect key="frame" x="290" y="432" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Hr8-CA-phu"/>
+                                    <constraint firstAttribute="width" constant="20" id="tBg-7S-oTf"/>
+                                </constraints>
+                                <color key="color" red="0.87567077019999995" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="rUS-MG-E15" secondAttribute="height" multiplier="200:11" id="1gE-nb-wpn"/>
+                            <constraint firstAttribute="centerX" secondItem="HpA-2g-p4B" secondAttribute="centerX" id="8ef-OZ-cHO"/>
+                            <constraint firstAttribute="trailing" secondItem="Bnc-mP-n5y" secondAttribute="trailing" constant="8" id="A9v-95-hj3"/>
+                            <constraint firstItem="Bnc-mP-n5y" firstAttribute="top" secondItem="4dr-ej-SgE" secondAttribute="top" constant="24" id="CTc-Ll-Xss"/>
+                            <constraint firstItem="avE-xo-PNi" firstAttribute="width" secondItem="4dr-ej-SgE" secondAttribute="height" multiplier="4:15" constant="-30" id="GEM-8h-vVc"/>
+                            <constraint firstAttribute="width" secondItem="uwP-vz-fnQ" secondAttribute="height" multiplier="12:1" constant="-600" id="HRV-wh-QMg"/>
+                            <constraint firstItem="rUS-MG-E15" firstAttribute="top" secondItem="Rni-hp-Nk9" secondAttribute="bottom" constant="37.5" id="IVO-lc-7kW"/>
+                            <constraint firstAttribute="centerX" secondItem="rUS-MG-E15" secondAttribute="centerX" id="Iy4-YZ-OMT"/>
+                            <constraint firstItem="Rni-hp-Nk9" firstAttribute="leading" secondItem="4dr-ej-SgE" secondAttribute="leading" constant="30" id="QsG-VD-7PN"/>
+                            <constraint firstItem="Rni-hp-Nk9" firstAttribute="leading" secondItem="4dr-ej-SgE" secondAttribute="leading" constant="30" id="RcH-rl-7fk"/>
+                            <constraint firstItem="avE-xo-PNi" firstAttribute="top" secondItem="uwP-vz-fnQ" secondAttribute="bottom" constant="32" id="TYW-jJ-Fvc"/>
+                            <constraint firstAttribute="centerX" secondItem="avE-xo-PNi" secondAttribute="centerX" id="Ur2-Oi-9iE"/>
+                            <constraint firstAttribute="trailing" secondItem="uwP-vz-fnQ" secondAttribute="trailing" constant="30" id="VSd-AY-6CF"/>
+                            <constraint firstItem="uwP-vz-fnQ" firstAttribute="leading" secondItem="4dr-ej-SgE" secondAttribute="leading" constant="30" id="ZHx-O6-Opa"/>
+                            <constraint firstAttribute="trailing" secondItem="Rni-hp-Nk9" secondAttribute="trailing" constant="30" id="gA4-zK-tEE"/>
+                            <constraint firstItem="Rni-hp-Nk9" firstAttribute="top" secondItem="avE-xo-PNi" secondAttribute="bottom" constant="33" id="gOX-DQ-lSc"/>
+                            <constraint firstItem="HpA-2g-p4B" firstAttribute="top" secondItem="rUS-MG-E15" secondAttribute="bottom" constant="29" id="hDy-ko-Lyf"/>
+                            <constraint firstAttribute="trailing" secondItem="Rni-hp-Nk9" secondAttribute="trailing" constant="30" id="k19-Tx-j74"/>
+                            <constraint firstItem="Rni-hp-Nk9" firstAttribute="width" secondItem="4dr-ej-SgE" secondAttribute="height" multiplier="9:10" id="m88-KR-8wy"/>
+                            <constraint firstItem="uwP-vz-fnQ" firstAttribute="top" secondItem="4dr-ej-SgE" secondAttribute="top" constant="115" id="zv0-KZ-uGO"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="RcH-rl-7fk"/>
+                                <exclude reference="gA4-zK-tEE"/>
+                                <exclude reference="m88-KR-8wy"/>
+                                <exclude reference="GEM-8h-vVc"/>
+                                <exclude reference="1gE-nb-wpn"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="restorePurchaseButton" destination="rUS-MG-E15" id="Xqf-IG-5j3"/>
+                        <outlet property="upgradeActivityIndicator" destination="HpA-2g-p4B" id="h7R-jp-R3V"/>
+                        <outlet property="upgradeButton" destination="avE-xo-PNi" id="Xa6-ji-eCp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YMo-Cc-siG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2079" y="495"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="SoundOff" width="48" height="48"/>
+        <image name="SoundOn" width="48" height="48"/>
+    </resources>
 </document>
